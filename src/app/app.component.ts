@@ -18,17 +18,21 @@ export class AppComponent {
   
   cars = [
     {
-      year:1998,
+      year:1997,
       brand:'Boszerie'
     },
     {
-      year:1997,
+      year:1998,
       brand:'ninja'
     },
     {
       year:1999,
       brand:'honda'
     },
+    {
+      year:2000,
+      brand:'toyota'
+    }
   ];
 
   employeeCode = '007';
