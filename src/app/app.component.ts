@@ -20,7 +20,15 @@ export class AppComponent {
     {
       year:1998,
       brand:'Boszerie'
-    }
+    },
+    {
+      year:1997,
+      brand:'ninja'
+    },
+    {
+      year:1999,
+      brand:'honda'
+    },
   ];
 
   employeeCode = '007';
