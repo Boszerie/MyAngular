@@ -1,65 +1,62 @@
-<!DOCTYPE html>
-<html lang="en">
+<div class="container">
+  <header class="container_header">
+    <a href="">Home</a>
+    <a href="">Student</a>
+    <a href="">Add Student</a>
+  </header>
+  <main>main</main>
+</div>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-
-<body>
-  Hello World Angular
-  This is my title {{title}}
-  <br>
-  My village ninja name is {{ninjaname}}
-  <button type="button" (click)="ninjaConsole()"> Console ninja </button>
+<!-- Hello World Angular
+This is my title {{title}}
+<br>
+My village ninja name is {{ninjaname}}
+<button type="button" (click)="ninjaConsole()"> Console ninja </button>
+<div>
+  <button type="button" (click)="changeNinjaName('sakura')"> Change ninja name to sakura </button>
+  <button type="button" (click)="changeNinjaName('sasuke')"> Change ninja name to sasuke </button>
+  <button type="button" (click)="changeNinjaName('naruto')"> Change ninja name to naruto </button>
+</div>
+<br>
+<h5>Float Label</h5>
+<span class="p-float-label">
+  <input id="float-input" type="text" pInputText [(ngModel)]="value2">
+  <label for="float-input">ชื่อ</label>
+</span>
+<br>
+<p-table [value]="cars">
+  <ng-template pTemplate="header">
+    <tr>
+      <th>Year</th>
+      <th>Brand</th>
+    </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-car>
+    <tr>
+      <td>{{car.year}}</td>
+      <td>{{car.brand}}</td>
+    </tr>
+  </ng-template>
+</p-table>
+<br>
+<div style="display: flex; flex-direction: column; row-gap: 0.5em;">
   <div>
-    <button type="button" (click)="changeNinjaName('sakura')"> Change ninja name to sakura </button>
-    <button type="button" (click)="changeNinjaName('sasuke')"> Change ninja name to sasuke </button>
-    <button type="button" (click)="changeNinjaName('naruto')"> Change ninja name to naruto </button>
+    <input type="text" [(ngModel)]="employeeCode" required #employeeCodeNgModel="ngModel" pInputText
+      placeholder="รหัส" />
+    <p-message *ngIf="employeeCodeNgModel.invalid" severity="error" text="กรุณาระบุรหัส"></p-message>
   </div>
-  <br>
-  <h5>Float Label</h5>
-  <span class="p-float-label">
-    <input id="float-input" type="text" pInputText [(ngModel)]="value2">
-    <label for="float-input">ชื่อ</label>
-  </span>
-  <br>
-  <p-table [value]="cars">
-    <ng-template pTemplate="header">
-      <tr>
-        <th>Year</th>
-        <th>Brand</th>
-      </tr>
-    </ng-template>
-    <ng-template pTemplate="body" let-car>
-      <tr>
-        <td>{{car.year}}</td>
-        <td>{{car.brand}}</td>
-      </tr>
-    </ng-template>
-  </p-table>
-  <br>
-  <div style="display: flex; flex-direction: column; row-gap: 0.5em;">
-    <div>
-      <input type="text" [(ngModel)]="employeeCode" required #employeeCodeNgModel="ngModel" pInputText
-        placeholder="รหัส" />
-      <p-message *ngIf="employeeCodeNgModel.invalid" severity="error" text="กรุณาระบุรหัส"></p-message>
-    </div>
 
-    <div>
-      <input type="text" [(ngModel)]="employeeName" required #employeeNameNgModel="ngModel" pInputText
-        placeholder="ชื่อ" />
-      <p-message *ngIf="employeeNameNgModel.invalid" severity="error" text="กรุณาระบุชื่อ"></p-message>
-    </div>
-
-    <div>
-      <button [disabled]="employeeCodeNgModel.invalid" [disabled]="employeeNameNgModel.invalid" pButton pRipple
-        type="button" label="บันทึก"></button>
-    </div>
+  <div>
+    <input type="text" [(ngModel)]="employeeName" required #employeeNameNgModel="ngModel" pInputText
+      placeholder="ชื่อ" />
+    <p-message *ngIf="employeeNameNgModel.invalid" severity="error" text="กรุณาระบุชื่อ"></p-message>
   </div>
-  <br>
-</body>
 
-</html>
+  <div>
+    <button [disabled]="employeeCodeNgModel.invalid" [disabled]="employeeNameNgModel.invalid" pButton pRipple
+      type="button" label="บันทึก"></button>
+  </div>
+</div>
+<br> -->
+
+
